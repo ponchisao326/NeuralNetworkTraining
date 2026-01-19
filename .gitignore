@@ -205,3 +205,53 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ----------------------------------------
+# CUSTOM - DATA SCIENCE & NEURAL NETWORKS
+# ----------------------------------------
+
+# Datasets y Datos
+# Es mejor ignorar carpetas enteras de datos o extensiones de archivos grandes
+data/
+datasets/
+raw_data/
+processed_data/
+*.csv
+*.xlsx
+*.json
+*.xml
+
+# Modelos Entrenados y Pesos (Weights)
+# Estos archivos pueden pesar gigas, no los subas al repo
+*.h5
+*.keras
+*.tflite
+*.pb
+*.pkl
+*.joblib
+models/
+checkpoints/
+saved_model/
+
+# Gráficos e Imágenes generadas por el código
+plots/
+results/
+*.png
+*.jpg
+*.svg
+
+# Jupyter Notebook checkpoints (Refuerzo)
+.ipynb_checkpoints/
+
+# Configuración de IDEs (Muy recomendado si usas VSCode o PyCharm)
+.vscode/
+.idea/
+
+# Archivos de sistema (Windows/Mac)
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Secretos (Por si creas un archivo con claves de DB)
+secrets.py
+config.py
